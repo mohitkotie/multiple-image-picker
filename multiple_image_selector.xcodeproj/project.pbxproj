@@ -12,9 +12,13 @@
 		636974A2216A80BD00CD4F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636974A0216A80BD00CD4F40 /* Main.storyboard */; };
 		636974A4216A80C100CD4F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636974A3216A80C100CD4F40 /* Assets.xcassets */; };
 		636974A7216A80C100CD4F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636974A5216A80C100CD4F40 /* LaunchScreen.storyboard */; };
+		636974AF216A909400CD4F40 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636974AE216A909400CD4F40 /* DataCollectionViewCell.swift */; };
+		A3C492B142F3E18483CCFD2E /* Pods_multiple_image_selector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19B35E6D9DE6C3BD5E54ABB /* Pods_multiple_image_selector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F276D57229DB66262091035 /* Pods-multiple_image_selector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiple_image_selector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multiple_image_selector/Pods-multiple_image_selector.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFC4D9258CC8A0B86BABFE4 /* Pods-multiple_image_selector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiple_image_selector.release.xcconfig"; path = "Pods/Target Support Files/Pods-multiple_image_selector/Pods-multiple_image_selector.release.xcconfig"; sourceTree = "<group>"; };
 		63697499216A80BD00CD4F40 /* multiple_image_selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiple_image_selector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6369749C216A80BD00CD4F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6369749E216A80BD00CD4F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		636974A3216A80C100CD4F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636974A6216A80C100CD4F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636974A8216A80C100CD4F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636974AE216A909400CD4F40 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		E19B35E6D9DE6C3BD5E54ABB /* Pods_multiple_image_selector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_multiple_image_selector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C492B142F3E18483CCFD2E /* Pods_multiple_image_selector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53195590CF2E96514B418920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19B35E6D9DE6C3BD5E54ABB /* Pods_multiple_image_selector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63697490216A80BD00CD4F40 = {
 			isa = PBXGroup;
 			children = (
 				6369749B216A80BD00CD4F40 /* multiple_image_selector */,
 				6369749A216A80BD00CD4F40 /* Products */,
+				7BAB686517395ECB941B039E /* Pods */,
+				53195590CF2E96514B418920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				636974A3216A80C100CD4F40 /* Assets.xcassets */,
 				636974A5216A80C100CD4F40 /* LaunchScreen.storyboard */,
 				636974A8216A80C100CD4F40 /* Info.plist */,
+				636974AE216A909400CD4F40 /* DataCollectionViewCell.swift */,
 			);
 			path = multiple_image_selector;
+			sourceTree = "<group>";
+		};
+		7BAB686517395ECB941B039E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F276D57229DB66262091035 /* Pods-multiple_image_selector.debug.xcconfig */,
+				4EFC4D9258CC8A0B86BABFE4 /* Pods-multiple_image_selector.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 636974AB216A80C100CD4F40 /* Build configuration list for PBXNativeTarget "multiple_image_selector" */;
 			buildPhases = (
+				6EA089D3342A7CB336A13A96 /* [CP] Check Pods Manifest.lock */,
 				63697495216A80BD00CD4F40 /* Sources */,
 				63697496216A80BD00CD4F40 /* Frameworks */,
 				63697497216A80BD00CD4F40 /* Resources */,
+				721ABF9DFB80C89C3F604626 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EA089D3342A7CB336A13A96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-multiple_image_selector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		721ABF9DFB80C89C3F604626 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-multiple_image_selector/Pods-multiple_image_selector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImageView/BSImageView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImageView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-multiple_image_selector/Pods-multiple_image_selector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63697495216A80BD00CD4F40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6369749F216A80BD00CD4F40 /* ViewController.swift in Sources */,
+				636974AF216A909400CD4F40 /* DataCollectionViewCell.swift in Sources */,
 				6369749D216A80BD00CD4F40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +353,7 @@
 		};
 		636974AC216A80C100CD4F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F276D57229DB66262091035 /* Pods-multiple_image_selector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		636974AD216A80C100CD4F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFC4D9258CC8A0B86BABFE4 /* Pods-multiple_image_selector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
